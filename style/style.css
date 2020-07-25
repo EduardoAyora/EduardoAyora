@@ -1,0 +1,44 @@
+button {
+    background-color: #34B3A0;
+    width: 300px;
+    transition: 1s;
+    position: relative;
+    /* inline pone los elementos uno junto a otro, por eso usamos block, para que
+    las separaciones absolutas funcionen */
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    overflow: hidden;
+    /* opcionales */
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    border: 0px;
+}
+
+span {
+    position: absolute;
+    line-height: inherit;
+    top: 0px;
+    transition: 2s;
+}
+
+.hola {
+    width: 58%;
+    left: 0px;
+}
+
+.mundo {
+    width: 38%;
+    right: 0px;
+    background-color: lawngreen;
+}
+
+button:hover .hola {
+    left: -58%;
+}
+
+button:hover .mundo {
+    width: 100%;
+}
+
+
